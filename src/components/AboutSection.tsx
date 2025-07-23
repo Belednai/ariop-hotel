@@ -1,8 +1,9 @@
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
 import { Award, MapPin, Users, Calendar } from "lucide-react";
+import OurTeamSection from "./OurTeamSection";
 
-const AboutSection = () => {
+const AboutSection = ({ showTeam = false }) => {
   const achievements = [
     {
       icon: Award,
@@ -79,6 +80,8 @@ const AboutSection = () => {
             ))}
           </div>
         </div>
+
+        {showTeam && <OurTeamSection />}
 
         <div className="mt-16 text-center">
           <div className="inline-flex items-center space-x-8 bg-card rounded-2xl p-8 shadow-card">

@@ -16,7 +16,7 @@ const Hero = () => {
       </div>
       
       {/* Content */}
-      <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto mt-16 md:mt-24">
+      <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto mt-8 md:mt-24">
         <div className="mb-6">
           <h1 className="text-5xl md:text-7xl font-serif font-bold mb-4 leading-tight">
             Welcome to
@@ -28,18 +28,18 @@ const Hero = () => {
           Experience unparalleled luxury and exceptional hospitality at South Sudan's premier five-star hotel since 2012.
         </p>
         
-        <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-          <div className="backdrop-blur-md bg-white/80 rounded-xl p-6 border border-white/60 shadow-lg">
-            <h3 className="text-3xl font-bold font-serif text-brand-dark mb-2">12+</h3>
-            <p className="text-lg text-[#333]">Years of Excellence</p>
+        <div className="mt-8 flex flex-row space-x-2 overflow-x-auto md:grid md:grid-cols-3 md:gap-8 md:space-x-0 text-center">
+          <div className="backdrop-blur-md bg-white/80 rounded-xl p-3 border border-white/60 shadow-lg min-w-[120px] flex-1">
+            <h3 className="text-xl md:text-3xl font-bold font-serif text-brand-dark mb-1">12+</h3>
+            <p className="text-xs md:text-lg text-[#333]">Years</p>
           </div>
-          <div className="backdrop-blur-md bg-white/80 rounded-xl p-6 border border-white/60 shadow-lg">
-            <h3 className="text-3xl font-bold font-serif text-brand-dark mb-2">50+</h3>
-            <p className="text-lg text-[#333]">Luxury Rooms</p>
+          <div className="backdrop-blur-md bg-white/80 rounded-xl p-3 border border-white/60 shadow-lg min-w-[120px] flex-1">
+            <h3 className="text-xl md:text-3xl font-bold font-serif text-brand-dark mb-1">50+</h3>
+            <p className="text-xs md:text-lg text-[#333]">Rooms</p>
           </div>
-          <div className="backdrop-blur-md bg-white/80 rounded-xl p-6 border border-white/60 shadow-lg">
-            <h3 className="text-3xl font-bold font-serif text-brand-dark mb-2">5★</h3>
-            <p className="text-lg text-[#333]">Premium Service</p>
+          <div className="backdrop-blur-md bg-white/80 rounded-xl p-3 border border-white/60 shadow-lg min-w-[120px] flex-1">
+            <h3 className="text-xl md:text-3xl font-bold font-serif text-brand-dark mb-1">5★</h3>
+            <p className="text-xs md:text-lg text-[#333]">Service</p>
           </div>
         </div>
       </div>

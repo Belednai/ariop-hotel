@@ -37,7 +37,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between py-4">
           <div className="flex items-center">
             <img src={ariopLogo} alt="Ariop Logo" className="w-10 h-10 mr-3" />
-            <div className="flex flex-col leading-tight">
+            <div className="flex flex-row md:flex-col leading-tight space-x-2 md:space-x-0">
               <span className="text-xl md:text-2xl font-serif font-bold text-brand-dark">Ariop</span>
               <span className="text-xl md:text-2xl font-serif font-bold text-brand-dark">Hotel</span>
             </div>

@@ -2,7 +2,7 @@ import AboutSection from "@/components/AboutSection";
 
 const AboutPage = () => (
   <main>
-    <AboutSection />
+    <AboutSection showTeam={true} />
   </main>
 );
 
