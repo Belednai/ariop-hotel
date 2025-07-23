@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 220 25% 98%;
+    --foreground: 220 15% 15%;
+    --card: 220 25% 99%;
+    --card-foreground: 220 15% 15%;
+    --popover: 220 25% 99%;
+    --popover-foreground: 220 15% 15%;
+    --brand: 217 90% 25%; /* #07347a */
+    --brand-dark: 217 90% 20%; /* #0a3b8f */
+    --brand-mid: 217 60% 40%; /* #1e4c9f */
+    --brand-light: 220 50% 60%; /* #516fae */
+    --brand-foreground: 0 0% 100%;
+    --primary: var(--brand);
+    --primary-foreground: var(--brand-foreground);
+    --secondary: 217 60% 95%;
+    --secondary-foreground: 217 90% 25%;
+    --muted: 220 10% 92%;
+    --muted-foreground: 220 8% 45%;
+    --accent: var(--brand-mid);
+    --accent-foreground: var(--brand-foreground);
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 220 10% 88%;
+    --input: 220 10% 88%;
+    --ring: var(--brand);
+    --radius: 0.75rem;
+    /* Gradients */
+    --gradient-hero: linear-gradient(90deg, hsl(var(--brand)) 0%, hsl(var(--brand-mid)) 100%);
+    --gradient-card: linear-gradient(145deg, #f5f7fa, #e9eff6);
+    --gradient-overlay: linear-gradient(180deg, rgba(7,52,122,0.7) 0%, rgba(30,76,159,0.9) 100%);
+    /* Shadows */
+    --shadow-luxury: 0 20px 60px -10px hsl(var(--brand) / 0.15);
+    --shadow-soft: 0 4px 20px -2px hsl(var(--brand-dark) / 0.08);
+    --shadow-card: 0 8px 32px -4px hsl(var(--brand-mid) / 0.10);
+    --sidebar-background: 220 25% 98%;
+    --sidebar-foreground: 220 15% 15%;
+    --sidebar-primary: var(--brand);
+    --sidebar-primary-foreground: var(--brand-foreground);
+    --sidebar-accent: var(--brand-light);
+    --sidebar-accent-foreground: var(--brand-foreground);
+    --sidebar-border: 220 10% 88%;
+    --sidebar-ring: var(--brand-mid);
+  }
+  .dark {
+    --background: 217 90% 10%;
+    --foreground: 0 0% 100%;
+    --card: 217 90% 10%;
+    --card-foreground: 0 0% 100%;
+    --popover: 217 90% 10%;
+    --popover-foreground: 0 0% 100%;
+    --primary: var(--brand-light);
+    --primary-foreground: var(--brand-foreground);
+    --secondary: 217 60% 20%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 217 32% 17%;
+    --muted-foreground: 217 20% 65%;
+    --accent: var(--brand-mid);
+    --accent-foreground: var(--brand-foreground);
+    --destructive: 0 62% 30%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 217 32% 17%;
+    --input: 217 32% 17%;
+    --ring: var(--brand);
+    --sidebar-background: 217 90% 10%;
+    --sidebar-foreground: 0 0% 100%;
+    --sidebar-primary: var(--brand);
+    --sidebar-primary-foreground: var(--brand-foreground);
+    --sidebar-accent: var(--brand-mid);
+    --sidebar-accent-foreground: var(--brand-foreground);
+    --sidebar-border: 217 32% 17%;
+    --sidebar-ring: var(--brand-mid);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
