@@ -2,7 +2,7 @@ import RoomsSection from "@/components/RoomsSection";
 
 const RoomsPage = () => (
   <main>
-    <RoomsSection />
+    <RoomsSection showViewAllButton={false} />
   </main>
 );
 

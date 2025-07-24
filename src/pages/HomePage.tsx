@@ -7,7 +7,7 @@ import ContactSection from "@/components/ContactSection";
 const HomePage = () => (
   <main>
     <Hero />
-    <RoomsSection />
+    <RoomsSection showViewAllButton={true} />
     <ServicesSection />
     <AboutSection />
     <ContactSection />

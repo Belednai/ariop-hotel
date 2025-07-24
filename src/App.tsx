@@ -11,6 +11,7 @@ import RoomsPage from "./pages/RoomsPage";
 import ServicesPage from "./pages/ServicesPage";
 import AboutPage from "./pages/AboutPage";
 import ContactPage from "./pages/ContactPage";
+import ReserveRoom from "./pages/ReserveRoom";
 import { useLocation } from "react-router-dom";
 
 const queryClient = new QueryClient();
@@ -37,6 +38,7 @@ const App = () => (
             <Route path="services" element={<ServicesPage />} />
             <Route path="about" element={<AboutPage />} />
             <Route path="contact" element={<ContactPage />} />
+            <Route path="/reserve" element={<ReserveRoom />} />
           </Route>
           <Route path="*" element={<NotFound />} />
         </Routes>

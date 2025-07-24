@@ -2,13 +2,18 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Star } from "lucide-react";
+import { Link } from "react-router-dom";
 
 import luxuryRoomImage from "@/assets/luxury-room.jpg";
 import premiumRoomImage from "@/assets/premium.jpeg";
 import executiveRoomImage from "@/assets/executive.jpeg";
 import presidentialRoomImage from "@/assets/presidential.jpeg";
 
-const RoomsSection = () => {
+interface RoomsSectionProps {
+  showViewAllButton?: boolean;
+}
+
+const RoomsSection: React.FC<RoomsSectionProps> = ({ showViewAllButton = true }) => {
   const rooms = [
     {
       name: "Luxury Suite",
@@ -80,19 +85,23 @@ const RoomsSection = () => {
                     ))}
                 </div>
 
-                <Button className="w-full bg-gradient-hero text-primary-foreground hover:opacity-90 shadow-luxury">
-                  Book Now
-                </Button>
+                <Link to="/reserve">
+                  <Button className="w-full bg-gradient-hero text-primary-foreground hover:opacity-90 shadow-luxury">
+                    Book Now
+                  </Button>
+                </Link>
               </CardContent>
             </Card>
           ))}
         </div>
 
-        <div className="text-center mt-16">
-          <Button variant="outline" size="lg" className="border-luxury-gold text-luxury-gold hover:bg-luxury-gold hover:text-primary-foreground transition-all duration-300 text-lg px-8 py-6">
-            View All Rooms
-          </Button>
-        </div>
+        {showViewAllButton && (
+          <div className="text-center mt-16">
+            <Button variant="outline" size="lg" className="border-luxury-gold text-luxury-gold hover:bg-luxury-gold hover:text-primary-foreground transition-all duration-300 text-lg px-8 py-6">
+              View All Rooms
+            </Button>
+          </div>
+        )}
       </div>
     </section>
   );

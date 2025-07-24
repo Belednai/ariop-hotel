@@ -94,17 +94,17 @@ const ContactSection = () => {
             {/* Map Placeholder */}
             <Card className="shadow-card bg-card border-0 overflow-hidden">
               <CardContent className="p-0">
-                <div className="h-64 bg-gradient-to-br from-brand/20 to-brand-dark/20 flex items-center justify-center">
-                  <div className="text-center">
-                    <MapPin className="w-12 h-12 text-brand mx-auto mb-4" />
-                    <h4 className="text-xl font-serif font-semibold text-foreground mb-2">
-                      Marol Market, Bor Town
-                    </h4>
-                    <p className="text-muted-foreground">
-                      Interactive map coming soon
-                    </p>
-                  </div>
-                </div>
+                <iframe
+                  title="Ariop Comercial centre Map"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d397.3939644798367!2d31.5591802!3d6.210716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1710272f4e7e8a67%3A0x38d7629b3042c93b!2sAriop%20Comercial%20centre!5e0!3m2!1sen!2sus!4v1717171717171!5m2!1sen!2sus"
+                  width="100%"
+                  height="256"
+                  style={{ border: 0 }}
+                  allowFullScreen={true}
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  className="w-full h-64"
+                ></iframe>
               </CardContent>
             </Card>
           </div>

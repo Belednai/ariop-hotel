@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Menu, X, Phone, MapPin } from "lucide-react";
 import ariopLogo from "@/assets/ariop_logo.png";
@@ -78,9 +78,11 @@ const Navbar = () => {
                 {item.label}
               </NavLink>
             ))}
-            <Button variant="default" className="bg-gradient-hero text-primary-foreground hover:opacity-90 shadow-luxury">
-              Book Now
-            </Button>
+            <Link to="/reserve">
+              <Button variant="default" className="bg-gradient-hero text-primary-foreground hover:opacity-90 shadow-luxury">
+                Book Now
+              </Button>
+            </Link>
           </div>
 
           {/* Mobile menu button */}
@@ -109,9 +111,11 @@ const Navbar = () => {
                   {item.label}
                 </NavLink>
               ))}
-              <Button variant="default" className="bg-gradient-hero text-primary-foreground mt-4">
-                Book Now
-              </Button>
+              <Link to="/reserve" onClick={() => setIsOpen(false)}>
+                <Button variant="default" className="bg-gradient-hero text-primary-foreground mt-4">
+                  Book Now
+                </Button>
+              </Link>
             </div>
           </div>
         )}
