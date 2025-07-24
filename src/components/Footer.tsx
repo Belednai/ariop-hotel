@@ -31,7 +31,7 @@ const Footer = () => {
               Ariop Hotel
             </h3>
             <div className="flex items-center space-x-1 mb-4">
-              {[...Array(5)].map((_, i) => (
+              {[...Array(3)].map((_, i) => (
                 <span key={i} className="text-luxury-gold text-xl">★</span>
               ))}
             </div>

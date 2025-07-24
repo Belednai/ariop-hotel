@@ -84,25 +84,25 @@ const AboutSection = ({ showTeam = false }) => {
         {showTeam && <OurTeamSection />}
 
         <div className="mt-16 text-center">
-          <div className="inline-flex items-center space-x-8 bg-card rounded-2xl p-8 shadow-card">
-            <div className="text-center">
-              <div className="text-3xl font-serif font-bold text-luxury-gold mb-1">50+</div>
-              <div className="text-sm text-muted-foreground">Luxury Rooms</div>
+          <div className="flex flex-col sm:flex-row items-center justify-center bg-card rounded-2xl p-4 sm:p-8 shadow-card gap-4 sm:gap-0">
+            <div className="flex-1 text-center">
+              <div className="text-2xl sm:text-3xl font-serif font-bold text-luxury-gold mb-1">50+</div>
+              <div className="text-xs sm:text-sm text-muted-foreground">Luxury Rooms</div>
             </div>
-            <div className="w-px h-12 bg-border"></div>
-            <div className="text-center">
-              <div className="text-3xl font-serif font-bold text-luxury-gold mb-1">5★</div>
-              <div className="text-sm text-muted-foreground">Service Rating</div>
+            <div className="hidden sm:block w-px h-12 bg-border"></div>
+            <div className="flex-1 text-center">
+              <div className="text-2xl sm:text-3xl font-serif font-bold text-luxury-gold mb-1">3★</div>
+              <div className="text-xs sm:text-sm text-muted-foreground">Service Rating</div>
             </div>
-            <div className="w-px h-12 bg-border"></div>
-            <div className="text-center">
-              <div className="text-3xl font-serif font-bold text-luxury-gold mb-1">24/7</div>
-              <div className="text-sm text-muted-foreground">Guest Support</div>
+            <div className="hidden sm:block w-px h-12 bg-border"></div>
+            <div className="flex-1 text-center">
+              <div className="text-2xl sm:text-3xl font-serif font-bold text-luxury-gold mb-1">24/7</div>
+              <div className="text-xs sm:text-sm text-muted-foreground">Guest Support</div>
             </div>
-            <div className="w-px h-12 bg-border"></div>
-            <div className="text-center">
-              <div className="text-3xl font-serif font-bold text-luxury-gold mb-1">1000+</div>
-              <div className="text-sm text-muted-foreground">Happy Guests</div>
+            <div className="hidden sm:block w-px h-12 bg-border"></div>
+            <div className="flex-1 text-center">
+              <div className="text-2xl sm:text-3xl font-serif font-bold text-luxury-gold mb-1">1000+</div>
+              <div className="text-xs sm:text-sm text-muted-foreground">Happy Guests</div>
             </div>
           </div>
         </div>

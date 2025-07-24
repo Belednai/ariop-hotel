@@ -59,7 +59,7 @@ const Navbar = () => {
               <span className="text-xl md:text-2xl font-serif font-bold text-brand-dark">Hotel</span>
             </div>
             <div className="hidden md:block ml-2 text-sm text-muted-foreground">
-              ★★★★★
+              <span className="text-xl text-luxury-gold align-middle">★★★</span>
             </div>
           </div>
 

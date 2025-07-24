@@ -26,7 +26,7 @@ const Hero = () => {
         </div>
         
         <p className="text-xl md:text-2xl mb-8 max-w-2xl mx-auto leading-relaxed font-light">
-          Experience unparalleled luxury and exceptional hospitality at South Sudan's premier five-star hotel since 2012.
+          Experience unparalleled luxury and exceptional hospitality at South Sudan's premier three-star hotel since 2012.
         </p>
         
         <div className="mt-8 flex flex-row space-x-2 overflow-x-auto md:grid md:grid-cols-3 md:gap-8 md:space-x-0 text-center">
@@ -39,7 +39,7 @@ const Hero = () => {
             <p className="text-xs md:text-lg text-[#333]">Rooms</p>
           </div>
           <div className="backdrop-blur-md bg-white/80 rounded-xl p-3 border border-white/60 shadow-lg min-w-[120px] flex-1">
-            <h3 className="text-xl md:text-3xl font-bold font-serif text-brand-dark mb-1">5★</h3>
+            <h3 className="text-xl md:text-3xl font-bold font-serif text-brand-dark mb-1">3★</h3>
             <p className="text-xs md:text-lg text-[#333]">Service</p>
           </div>
         </div>

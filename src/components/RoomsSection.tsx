@@ -70,7 +70,7 @@ const RoomsSection: React.FC<RoomsSectionProps> = ({ showViewAllButton = true })
               <div className="relative">
                 <img src={room.image} alt={room.name} className="w-full h-56 object-cover"/>
                 <div className="absolute top-2 right-2 flex items-center bg-background/80 backdrop-blur-sm px-2 py-1 rounded-full">
-                  <span className="text-yellow-400 mr-1">{room.rating}</span>
+                  <span className="text-yellow-400 mr-1 font-bold text-base">3</span>
                   <Star className="w-4 h-4 text-yellow-400 fill-current" />
                 </div>
               </div>
@@ -97,9 +97,11 @@ const RoomsSection: React.FC<RoomsSectionProps> = ({ showViewAllButton = true })
 
         {showViewAllButton && (
           <div className="text-center mt-16">
-            <Button variant="outline" size="lg" className="border-luxury-gold text-luxury-gold hover:bg-luxury-gold hover:text-primary-foreground transition-all duration-300 text-lg px-8 py-6">
-              View All Rooms
-            </Button>
+            <Link to="/rooms">
+              <Button variant="outline" size="lg" className="border-luxury-gold text-luxury-gold hover:bg-luxury-gold hover:text-primary-foreground transition-all duration-300 text-lg px-8 py-6">
+                View All Rooms
+              </Button>
+            </Link>
           </div>
         )}
       </div>

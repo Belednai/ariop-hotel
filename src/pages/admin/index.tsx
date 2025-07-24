@@ -1,0 +1,1 @@
+// Placeholder for admin pages index (optional for scalability) 
