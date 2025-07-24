@@ -18,15 +18,16 @@ const Hero = () => {
       
       {/* Content */}
       <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto mt-8 md:mt-24">
-        <div className="mb-6 flex flex-col items-center justify-center gap-2 md:flex-row md:gap-4">
-          <img src={ariopLogo} alt="Ariop Logo" className="w-14 h-14 md:w-16 md:h-16 mb-2 md:mb-0" />
-          <div className="flex flex-col items-center md:items-start">
-            <h1 className="text-3xl md:text-5xl font-serif font-bold leading-tight">
-              Ariop Hotel - Luxury Accommodation in Bor Town
-            </h1>
-            <span className="text-lg md:text-2xl text-luxury-gold font-medium mt-1">Experience five-star luxury at Ariop Hotel in Bor Town, South Sudan.</span>
-          </div>
+        <div className="mb-6">
+          <h1 className="text-5xl md:text-7xl font-serif font-bold mb-4 leading-tight">
+            Welcome to
+            <span className="block text-luxury-gold">Ariop Hotel</span>
+          </h1>
         </div>
+        
+        <p className="text-xl md:text-2xl mb-8 max-w-2xl mx-auto leading-relaxed font-light">
+          Experience unparalleled luxury and exceptional hospitality at South Sudan's premier five-star hotel since 2012.
+        </p>
         
         <div className="mt-8 flex flex-row space-x-2 overflow-x-auto md:grid md:grid-cols-3 md:gap-8 md:space-x-0 text-center">
           <div className="backdrop-blur-md bg-white/80 rounded-xl p-3 border border-white/60 shadow-lg min-w-[120px] flex-1">
