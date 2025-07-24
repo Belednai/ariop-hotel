@@ -98,7 +98,7 @@ const RoomsSection: React.FC<RoomsSectionProps> = ({ showViewAllButton = true })
         {showViewAllButton && (
           <div className="text-center mt-16">
             <Link to="/rooms">
-              <Button variant="outline" size="lg" className="border-luxury-gold text-luxury-gold hover:bg-luxury-gold hover:text-primary-foreground transition-all duration-300 text-lg px-8 py-6">
+              <Button variant="outline" size="lg" className="border-luxury-gold text-luxury-gold hover:bg-gradient-hero hover:text-primary-foreground transition-all duration-300 text-lg px-8 py-6">
                 View All Rooms
               </Button>
             </Link>
