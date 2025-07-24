@@ -4,6 +4,23 @@ import { Button } from "@/components/ui/button";
 import { Menu, X, Phone, MapPin } from "lucide-react";
 import ariopLogo from "@/assets/ariop_logo.png";
 
+const handleNavClick = (idOrPath: string) => (event: React.MouseEvent) => {
+  // Let react-router-dom handle navigation first
+  setTimeout(() => {
+    const id = idOrPath.replace('/', '');
+    if (id === '' || id === 'home') {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      return;
+    }
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    } else {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  }, 0);
+};
+
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -56,6 +73,7 @@ const Navbar = () => {
                   `text-foreground hover:text-brand-mid transition-colors duration-300 font-medium${isActive ? ' underline underline-offset-4' : ''}`
                 }
                 end={item.to === "/"}
+                onClick={handleNavClick(item.to)}
               >
                 {item.label}
               </NavLink>
@@ -85,7 +103,7 @@ const Navbar = () => {
                   className={({ isActive }) =>
                     `text-foreground hover:text-brand-mid transition-colors duration-300 font-medium py-2${isActive ? ' underline underline-offset-4' : ''}`
                   }
-                  onClick={() => setIsOpen(false)}
+                  onClick={e => { setIsOpen(false); handleNavClick(item.to)(e); }}
                   end={item.to === "/"}
                 >
                   {item.label}
