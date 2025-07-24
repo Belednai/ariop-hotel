@@ -18,7 +18,7 @@ const RoomsSection: React.FC<RoomsSectionProps> = ({ showViewAllButton = true })
     {
       name: "Luxury Suite",
       image: luxuryRoomImage,
-      price: "$250/night",
+      price: "$120/night",
       rating: 5,
       description: "A spacious suite with a king-sized bed, a private balcony with a city view, and a luxurious marble bathroom.",
       amenities: ["King Bed", "City View", "Free WiFi", "Mini Bar"]
@@ -26,7 +26,7 @@ const RoomsSection: React.FC<RoomsSectionProps> = ({ showViewAllButton = true })
     {
       name: "Premium Room",
       image: premiumRoomImage,
-      price: "$180/night",
+      price: "$50/night",
       rating: 4,
       description: "A beautifully appointed room with modern amenities, perfect for both business and leisure travelers.",
       amenities: ["Queen Bed", "Desk", "Free WiFi", "Coffee Maker"]
@@ -34,7 +34,7 @@ const RoomsSection: React.FC<RoomsSectionProps> = ({ showViewAllButton = true })
     {
       name: "Executive Room",
       image: executiveRoomImage,
-      price: "$220/night",
+      price: "$80/night",
       rating: 5,
       description: "Designed for the discerning guest, this room offers extra space and exclusive access to our business lounge.",
       amenities: ["King Bed", "Lounge Access", "Free WiFi", "Breakfast"]
@@ -42,7 +42,7 @@ const RoomsSection: React.FC<RoomsSectionProps> = ({ showViewAllButton = true })
     {
       name: "Presidential Suite",
       image: presidentialRoomImage,
-      price: "$500/night",
+      price: "$200/night",
       rating: 5,
       description: "The pinnacle of luxury, offering panoramic views, a separate living area, and personalized butler service.",
       amenities: ["2 Bedrooms", "Panoramic View", "Butler Service", "Full Bar"]
